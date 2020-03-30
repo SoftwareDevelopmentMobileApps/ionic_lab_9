@@ -9,4 +9,16 @@
 <ion-content [fullscreen]="true">
   <ion-title>My status is : {{myStatus}}</ion-title>
  <ion-button [routerLink]="['/status']">Update Status</ion-button>
+
+
+ <br>
+
+ <ion-button (click)="lightMethod()">Flashlight</ion-button>
+
+ <br>
+
+ <ion-button (click)="locationMethod()">My Location</ion-button>
+ <br>
+
+ {{lat}}, {{long}}
 </ion-content>

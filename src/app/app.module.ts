@@ -11,7 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import {FormsModule} from '@angular/forms'
 import {IonicStorageModule} from '@ionic/storage';
-
+import { Flashlight } from '@ionic-native/flashlight/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,6 +22,8 @@ import {IonicStorageModule} from '@ionic/storage';
   providers: [
     StatusBar,
     SplashScreen,
+    Flashlight,
+    Geolocation,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
